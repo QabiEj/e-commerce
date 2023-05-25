@@ -1,0 +1,13 @@
+Admin
+----
+[] Products - is_active
+[] Orders - me role
+[] Profile
+[] Logout
+
+
+Shop
+----
+[] checkout
+[] login
+[] register
