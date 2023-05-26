@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2023 at 11:07 PM
+-- Generation Time: May 26, 2023 at 11:41 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 5.6.38
 
@@ -145,9 +145,9 @@ CREATE TABLE `promotions` (
 --
 
 INSERT INTO `promotions` (`id`, `title`, `subtitle`, `is_active`, `image`) VALUES
-(13, 'ASUS Rog Strike 500', 'Best gaming laptop of 2023', 1, '1678131699mb_d-KS-1678094748.jpg'),
-(14, 'Karrige per gamera', 'Karrige komode nga brendi i ASUS', 0, '1678131832mb-d-1677936208.jpg'),
-(15, 'Samsung HQ TV', 'Bota reale ne ekranin tuaj', 0, '1678131859tc.jpg');
+(18, 'Promocion', '50% Zbritje', 1, '1685135548Yellow Black Creative Modern Fried Chicken Promotion Banner.jpg'),
+(19, 'Pije V8', 'Zbritje 16%', 1, '1685137055Juice Promotion Template (Facebook Post) (1).png'),
+(20, 'Pije V8', '7% Zbritje', 0, '1685137157Juice Promotion Template (Facebook Post) (2).png');
 
 -- --------------------------------------------------------
 
@@ -246,7 +246,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `promotions`
 --
 ALTER TABLE `promotions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `users`
