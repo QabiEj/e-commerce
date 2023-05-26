@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2023 at 10:06 PM
+-- Generation Time: May 26, 2023 at 10:27 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 5.6.38
 
@@ -41,7 +41,8 @@ INSERT INTO `categories` (`id`, `name`) VALUES
 (1, 'Food'),
 (2, 'Drinks'),
 (3, 'Pasta'),
-(7, 'Ushqimet');
+(8, 'Akullore'),
+(9, 'KripÃ«');
 
 -- --------------------------------------------------------
 
@@ -82,10 +83,10 @@ CREATE TABLE `order_product` (
 --
 
 INSERT INTO `order_product` (`order_id`, `products_id`) VALUES
-(3, 6),
-(3, 2),
-(4, 8),
-(5, 6);
+(3, NULL),
+(3, NULL),
+(4, NULL),
+(5, NULL);
 
 -- --------------------------------------------------------
 
@@ -110,11 +111,13 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `user_id`, `name`, `price`, `qty`, `discount`, `description`, `image`, `category_id`) VALUES
-(2, 1, 'Bread', 0.45, 10, 5, 'White Bread 500gr', '1678134163download.jpg', 1),
-(6, 1, 'Coca Cola 0.5l', 1.25, 10, 0, 'Coca Cola 0.5l\r\n<br />\r\nOrigin: RKS', '16782999921678132836coca-cola-original-20oz.png', 2),
-(7, 1, 'Coca Cola 0.33l', 0.88, 50, 2, 'Coca Cola 0.33l\r\n<br />\r\nOrigin: Macedonia', '16782999721678133665coca-cola-classic-033-l-sweet-water-w-w.jpg', 2),
-(8, 1, 'Fanta 0.5l', 1.15, 8, 10, 'Fanta 0.5l\r\n<br />\r\nOrigin: RKS', '1678302734fanta-0.5-L-pet.jpg', 2),
-(14, 2, 'Chipsa Vipa', 0.5, 100, 5, '', '168513094308-Clasic-i-thjesht.png', 1);
+(1, 1, 'Bread', 0.45, 10, 5, 'White Bread 500gr', '1678134163download.jpg', 1),
+(2, 1, 'Coca Cola 0.5l', 1.25, 10, 0, 'Coca Cola 0.5l\r\n<br />\r\nOrigin: RKS', '16782999921678132836coca-cola-original-20oz.png', 2),
+(3, 1, 'Coca Cola 0.33l', 0.88, 50, 2, 'Coca Cola 0.33l\r\n<br />\r\nOrigin: Macedonia', '16782999721678133665coca-cola-classic-033-l-sweet-water-w-w.jpg', 2),
+(4, 1, 'Fanta 0.5l', 1.15, 8, 10, 'Fanta 0.5l\r\n<br />\r\nOrigin: RKS', '1678302734fanta-0.5-L-pet.jpg', 2),
+(5, 2, 'Chipsa Vipa', 0.5, 100, 5, '', '168513094308-Clasic-i-thjesht.png', 1),
+(6, 2, 'UjÃ« 500ml', 0.5, 100, 5, 'UjÃ« natyral', '1685132059Uji.jpg', 2),
+(17, 2, 'KripÃ« deti', 6.88, 55, 5, 'KripÃ« deti natyral e pÃ«rfituar nga Mesdheu Francez.', '1685132532Kripe.jpg', 9);
 
 -- --------------------------------------------------------
 
@@ -218,7 +221,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `orders`
@@ -230,7 +233,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `promotions`
