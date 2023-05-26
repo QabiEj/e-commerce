@@ -20,7 +20,7 @@
                 $cart_product['qty'] = $qty;
                 $_SESSION['cart'][$id] = $cart_product;
             }
-            
+            //redirect
             header('Location: cart.php');
         } else {
             header('Location: view-product.php?id='.$id);
