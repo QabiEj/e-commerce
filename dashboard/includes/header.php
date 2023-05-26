@@ -26,7 +26,7 @@ if(isset($_GET['action']) && ($_GET['action'] === 'logout')) {
     unset($_SESSION['is_loggedin']);
     unset($_SESSION['role']);
 
-    header('Location: http://localhost/e-commerce/');
+    header('Location: http://localhost/bc6/e-commerce/');
 }
 ?>
 <!doctype html>

@@ -22,7 +22,7 @@
         $image = $_FILES['image'];
 
 
-        $data = ['user_id' => $_SESSION['user_id'], 'category_id' => $category_id, 'name' => $name, 'qty' => $qty, 'discount' => $discount, 'price' => $price, 'description' => $description];
+        $data = ['user_id' => 2, 'category_id' => $category_id, 'name' => $name, 'qty' => $qty, 'discount' => $discount, 'price' => $price, 'description' => $description];
 
         if(!empty($image['name']) || imageIsValid($image['name'])) {
             $data['image'] = time().$image['name'];
