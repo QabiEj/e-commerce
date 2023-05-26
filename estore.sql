@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2023 at 10:27 PM
+-- Generation Time: May 26, 2023 at 11:07 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 5.6.38
 
@@ -42,7 +42,8 @@ INSERT INTO `categories` (`id`, `name`) VALUES
 (2, 'Drinks'),
 (3, 'Pasta'),
 (8, 'Akullore'),
-(9, 'KripÃ«');
+(9, 'KripÃ«'),
+(10, 'Kuzhine');
 
 -- --------------------------------------------------------
 
@@ -63,9 +64,7 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `user_id`, `customer_data`, `notes`, `total`) VALUES
-(3, 2, 'John Smith<br />+3894535434<br />ylber.veliu@yahoo.com<br />Dr. Mladen Stojanovikj Br. 28', 'ASAP', 1.7),
-(4, 2, 'Ilber Velija Veliji<br />+3894535434<br />ylber.veliu@yahoo.com<br />Dr. Mladen Stojanovikj Br. 28', 'ASAP please', 2.3),
-(5, 2, 'Ilber Veliji<br />070580780<br />ylber.veliu@yahoo.com<br />Brakja Filipovikj Br. 8\r\n8', 'dsadasdasdasd test', 1.25);
+(14, 3, 'Shaban Ejupi<br />+38345601379<br />shabanejupi5@gmail.com<br />128 Zejnel Salihu', 'E pa hapur', 1.25);
 
 -- --------------------------------------------------------
 
@@ -83,10 +82,16 @@ CREATE TABLE `order_product` (
 --
 
 INSERT INTO `order_product` (`order_id`, `products_id`) VALUES
-(3, NULL),
-(3, NULL),
-(4, NULL),
-(5, NULL);
+(NULL, NULL),
+(NULL, NULL),
+(NULL, NULL),
+(NULL, NULL),
+(NULL, 3),
+(NULL, 17),
+(NULL, 1),
+(NULL, 2),
+(NULL, 18),
+(14, 2);
 
 -- --------------------------------------------------------
 
@@ -112,12 +117,14 @@ CREATE TABLE `products` (
 
 INSERT INTO `products` (`id`, `user_id`, `name`, `price`, `qty`, `discount`, `description`, `image`, `category_id`) VALUES
 (1, 1, 'Bread', 0.45, 10, 5, 'White Bread 500gr', '1678134163download.jpg', 1),
-(2, 1, 'Coca Cola 0.5l', 1.25, 10, 0, 'Coca Cola 0.5l\r\n<br />\r\nOrigin: RKS', '16782999921678132836coca-cola-original-20oz.png', 2),
+(2, 3, 'Coca Cola 0.5l', 1.25, 10, 3, 'Coca Cola 0.5l\r\n<br />\r\nOrigin: RKS', '168513449416782999921678132836coca-cola-original-20oz.png', 2),
 (3, 1, 'Coca Cola 0.33l', 0.88, 50, 2, 'Coca Cola 0.33l\r\n<br />\r\nOrigin: Macedonia', '16782999721678133665coca-cola-classic-033-l-sweet-water-w-w.jpg', 2),
 (4, 1, 'Fanta 0.5l', 1.15, 8, 10, 'Fanta 0.5l\r\n<br />\r\nOrigin: RKS', '1678302734fanta-0.5-L-pet.jpg', 2),
 (5, 2, 'Chipsa Vipa', 0.5, 100, 5, '', '168513094308-Clasic-i-thjesht.png', 1),
 (6, 2, 'UjÃ« 500ml', 0.5, 100, 5, 'UjÃ« natyral', '1685132059Uji.jpg', 2),
-(17, 2, 'KripÃ« deti', 6.88, 55, 5, 'KripÃ« deti natyral e pÃ«rfituar nga Mesdheu Francez.', '1685132532Kripe.jpg', 9);
+(17, 2, 'KripÃ« deti', 6.88, 55, 5, 'KripÃ« deti natyral e pÃ«rfituar nga Mesdheu Francez.', '1685132532Kripe.jpg', 9),
+(18, 3, 'Peanut Butter', 13.23, 200, 10, 'Spread on the smiles with tasty, creamy peanut buttery perfection. Itâ€™s nothing but great snacking with this creamy classic.', '1685133339Peanut Butter.jpg', 10),
+(20, 3, 'Snack mix', 2.98, 45, 7, 'SNACK MIX: Indulgent Turtle Snack Mix is loaded with fun, flavorful shapes of Chex, pretzels, nuts and more', '1685134288Snack mix.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -221,19 +228,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `promotions`

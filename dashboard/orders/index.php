@@ -8,7 +8,7 @@
     if(isset($_SESSION['role']) && $_SESSION['role'] == 'admin') {
         $orders = $crud->read('orders');
     } else if(isset($_SESSION['role']) && $_SESSION['role'] == 'customer') {
-        $orders = $crud->read('orders', ['column' => 'user_id', 'value' => $_SESSION['id']]);
+        $orders = $crud->read('orders', ['column' => 3, 'value' => $_SESSION['id']]);
     }
 ?>
 

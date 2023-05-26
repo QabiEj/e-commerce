@@ -35,7 +35,7 @@
 
         if(count($errors) === 0) {
             $data = [
-                'user_id' => $_SESSION['id'],
+                'user_id' => 3,
                 'customer_data' => ($fullname ."<br />" .$phone ."<br />" .$email ."<br />" .$address),
                 'notes' => $notes,
                 'total' => array_reduce($_SESSION['cart'], function($sum, $item) { 

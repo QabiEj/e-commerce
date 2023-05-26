@@ -99,10 +99,10 @@
             <div class="col-lg-6 offset-lg-1 col-md-6 offset-md-1 col-sm-12 offset-sm-0">
                 <h2>eStore</h2>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat veritatis perferendis a accusantium nemo eum voluptatibus maxime optio, non blanditiis? Ipsa ab error aliquid dolorum, quasi dolor illo quam corrupti!
-                </p>
+                Welcome to our bustling virtual marketplace, where the world of market products comes alive in an electrifying array of choices. Get ready to embark on a shopping adventure like no other, where every click brings you closer to discovering treasures you never knew you needed.
+                Step into our digital bazaar and prepare to be captivated by an extensive selection of market products that cater to all your desires. From farm-fresh produce that bursts with flavor to handmade crafts that exude artistry, we've handpicked a collection that will leave you breathless and longing for more.
                 <p class="mt-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat earum error molestiae exercitationem velit at corporis porro cumque minus ducimus, quia ex quo consectetur veniam tenetur reiciendis ratione quisquam qui.
+                Indulge in the thrill of exploration as you navigate our user-friendly platform, where each product is a gateway to a world of flavors, scents, and craftsmanship. Unleash your curiosity and immerse yourself in a realm where passion meets purpose, with every purchase supporting local farmers, artisans, and visionaries.
                 </p>
             </div>
         </div>

@@ -25,7 +25,7 @@
         $image = $_FILES['image'];
 
         $data = [
-            'user_id' => $_SESSION['2'], 
+            'user_id' => 3, 
             'category_id' => $category_id, 
             'name' => $name, 
             'qty' => $qty, 
