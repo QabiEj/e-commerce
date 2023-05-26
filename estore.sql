@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Pritësi (host): 127.0.0.1
--- Koha e gjenerimit: Maj 26, 2023 në 03:19 MD
+-- Koha e gjenerimit: Maj 26, 2023 në 08:44 MD
 -- Versioni i serverit: 10.1.36-MariaDB
 -- PHP Versioni: 5.6.38
 
@@ -61,7 +61,8 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `user_id`, `customer_data`, `notes`, `total`) VALUES
-(6, 3, 'Shaban Ejupi<br />+38345601379<br />shabanejupi5@gmail.com<br />128 Zejnel Salihu', '', 2.25);
+(6, 3, 'Shaban Ejupi<br />+38345601379<br />shabanejupi5@gmail.com<br />128 Zejnel Salihu', '', 2.25),
+(7, 4, 'Shaban Ejupi<br />+38345601379<br />shabanejupi5@gmail.com<br />128 Zejnel Salihu', 'E pa hapur', 0.88);
 
 -- --------------------------------------------------------
 
@@ -83,7 +84,8 @@ INSERT INTO `order_product` (`order_id`, `products_id`) VALUES
 (NULL, 2),
 (NULL, 8),
 (NULL, 6),
-(6, 2);
+(6, 2),
+(7, 7);
 
 -- --------------------------------------------------------
 
@@ -132,7 +134,7 @@ CREATE TABLE `promotions` (
 --
 
 INSERT INTO `promotions` (`id`, `title`, `subtitle`, `is_active`, `image`) VALUES
-(13, 'ASUS Rog Strike 500', 'Best gaming laptop of 2023', 1, '1678131699mb_d-KS-1678094748.jpg'),
+(13, 'ASUS Rog Strike 500', 'Best gaming laptop of 2023', 1, '16851260551678134100mb_d-KS-1678094748.jpg'),
 (14, 'Karrige per gamera', 'Karrige komode nga brendi i ASUS', 0, '1678131832mb-d-1677936208.jpg'),
 (15, 'Samsung HQ TV', 'Bota reale ne ekranin tuaj', 0, '1678131859tc.jpg');
 
@@ -160,7 +162,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `surname`, `email`, `password`, `address`, `phone`, `avatar`, `role`) VALUES
 (3, 'Arianit', 'Likaj', 'arianitlikaj46@gmail.com', '$2y$10$.jVNuiz9abwy5npn6mv2JeJ2OluOXshH48DIT/ymjFNRWVbggPfRi', 'Prizren', '045807088', 'avatar.png', 'admin'),
-(4, 'Shaban', 'Ejupi', 'shabanejupi5@gmail.com', '$2y$10$6NhHYe1g5DBYnizZo2q6wOhiW7DR1eAQyv.e8wNqlBTxn/eX3TFxm', 'Podujevë', '045601379', 'avatar.png', 'customer');
+(4, 'Shaban', 'Ejupi', 'shabanejupi5@gmail.com', '$2y$10$6NhHYe1g5DBYnizZo2q6wOhiW7DR1eAQyv.e8wNqlBTxn/eX3TFxm', 'Podujevë', '045601379', 'avatar.png', 'admin');
 
 --
 -- Indekset për tabelat e hedhura
@@ -220,7 +222,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT për tabelë `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT për tabelë `products`
