@@ -37,10 +37,10 @@
                         <tbody>
                             <tr>
                                 <th>#</th>
+                                <th>Picture</th>
                                 <th>Name</th>
                                 <th>Price</th>
-                                <th>Qty</th>
-                                <th></th>
+                                <th>#</th>
                             </tr>
                             <?php foreach($products as $product): ?>
                             <tr>
