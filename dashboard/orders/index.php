@@ -1,15 +1,16 @@
 <?php 
-    include('../includes/header.php'); 
+include('../includes/header.php'); 
 
-    include('../../classes/CRUD.php');
-    $crud = new CRUD;
+include('../../classes/CRUD.php');
+$crud = new CRUD;
 
-    
-    if(isset($_SESSION['role']) && $_SESSION['role'] == 'admin') {
-        $orders = $crud->read('orders');
-    } else if(isset($_SESSION['role']) && $_SESSION['role'] == 'customer') {
-        $orders = $crud->read('orders', ['column' => 3, 'value' => $_SESSION['id']]);
-    }
+if(isset($_SESSION['role']) && $_SESSION['role'] == 'admin') {
+    $orders = $crud->read('orders');
+} else if(isset($_SESSION['role']) && $_SESSION['role'] == 'customer') {
+    $orders = $crud->read('orders', ['column' => 'user_id', 'value' => $_SESSION['id']]);
+} else {
+    $orders = []; // Set $orders as an empty array if no conditions are met
+}
 ?>
 
 <div class="dashboard my-5">
@@ -17,9 +18,9 @@
         <h3 class="mb-4">Orders</h3>
         <div class="card">
             <div class="card-body">
-                <?php if(count($orders) > 0): ?>
+                <?php if(is_array($orders) && count($orders) > 0): ?>
                 <div class="table-responsive">
-                    <table class="table table-borderd">
+                    <table class="table table-bordered">
                         <tbody>
                             <tr>
                                 <th>#</th>
