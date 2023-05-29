@@ -2,7 +2,7 @@
     include('includes/header.php');
     
     $promotions = $crud->read('promotions', [], 4, ['column' => 'id', 'order' => 'DESC']);
-    $products = $crud->read('products', [], 4, ['column' => 'id', 'order' => 'DESC']);
+    $products = $crud->read('products', [], 8, ['column' => 'id', 'order' => 'DESC']);
 ?>
 
 <?php if(isset($_GET['action']) && ($_GET['action'] == 'checkout')): ?>
