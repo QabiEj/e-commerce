@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 29, 2023 at 04:21 PM
+-- Generation Time: May 31, 2023 at 01:23 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 5.6.38
 
@@ -138,7 +138,7 @@ INSERT INTO `products` (`id`, `user_id`, `name`, `price`, `qty`, `discount`, `de
 (11, NULL, 'Biscuit mix', 3.29, 29, 5, 'BISCUIT MIX: Make a delicious meal with this baking mix that makes fluffy, mouth-watering biscuits', '1685167884Biskota - cheese, garlic.jpg', 1),
 (12, NULL, 'Juice Izze (pack 24)', 13.96, 32, 5, 'IZZE Sparkling Juices Include 70 percent fruit juice with a Splash of sparkling Water', '1685168325juice.jpg', 2),
 (13, NULL, 'Rice ', 6.45, 50, 8, 'When flavor and texture of the rice is crucial in cooking, Nishiki is the brand people look to.', '1685168590Oriz.jpg', 3),
-(14, NULL, 'PLANTERS Deluxe Salted Mixed Nuts', 8.98, 38, 3, 'A Nut for Every Craving: Go nuts for all your favorites with this tasty assortment of roasted cashews, almonds, Brazil nuts, pistachios, and pecans. Find all the premium mixed nuts you crave', '1685168733Nuts.jpg', 10),
+(14, NULL, 'Mixed Nuts', 8.98, 38, 3, 'A Nut for Every Craving: Go nuts for all your favorites with this tasty assortment of roasted cashews, almonds, Brazil nuts, pistachios, and pecans. Find all the premium mixed nuts you crave', '1685168733Nuts.jpg', 10),
 (15, NULL, 'Wafer Vanilla', 1.68, 78, 2, 'Bauducco Vanilla Wafers - Crispy Wafer Cookies With 3 Delicious, Indulgent, Decadent Layers of Vanilla Flavored Cream - Delicious Sweet Snack or Desert - 5.82oz (Pack of 1)', '1685168883WaferVanilla.jpg', 10),
 (16, NULL, 'Expresso Coffee', 28.98, 58, 5, 'Starbucks Doubleshot Energy Espresso Coffee, Vanilla, 15 oz Cans (12 Pack) (Packaging May Vary)', '1685168993Expresso Coffee.jpg', 2),
 (17, NULL, 'Vegetables pack', 35, 5, 50, 'Discover the essence of nature\'s bountiful harvest with \"Garden Fresh Delights,\" a thoughtfully curated pack of vibrant and nutritious vegetables. Packed with flavor, color, and an abundance of health benefits, this assortment is designed to elevate your culinary experiences and support your well-being.', '1685170020Fresh Healthy Vegetables Store Promotion Your Story.png', 1),
@@ -273,7 +273,7 @@ ALTER TABLE `promotions`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Constraints for dumped tables
