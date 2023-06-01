@@ -17,7 +17,7 @@ This is a fully featured eCommerce website developed in PHP. It provides an intu
 1. Clone the repository.
 2. Set up a local development server with PHP (like XAMPP, WAMP, or MAMP).
 3. Import the database to your MySQL server.
-4. Update the `classes/Database.php` file with your own database connection information.
+4. Update the `classes/Database.php` file with your own database connection information and the config.php file with your PayPal client ID and secret and the return and cancel URLs for PayPal, in case if you want to make it yours.
 5. Run the `composer require league/omnipay omnipay/paypal` command to set up the PayPal integration.
 6. Run the website on your local development server.
 
@@ -34,6 +34,7 @@ Key scripts include:
 - `login.php`: Manages user login functionality.
 - `cart.php`: Provides shopping cart functionality.
 - `checkout.php`: Handles the checkout process and PayPal payment.
+- `config.php`: Sets up the PayPal payment gateway and database connection.
 - `includes/header.php` and `includes/footer.php`: Contain HTML used across multiple pages.
 - `classes/CRUD.php`: Includes a CRUD (Create, Read, Update, Delete) class for database operations.
 
