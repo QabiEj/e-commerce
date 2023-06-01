@@ -2,7 +2,7 @@
 # eCommerce Shopping Cart Website
 
 ## Introduction
-This is a fully featured eCommerce website developed in PHP. It provides an intuitive and user-friendly platform for customers to browse and purchase products online. The website features an extensive product catalog, secure user authentication, advanced product search and filtering, shopping cart functionality, user profile management, credit card payment form, and integrated PayPal payment plus transportation details and process included as part of Paypal payment (###updated version based in our promises given as part of assignment 2 - Diagrams).
+This is a fully featured eCommerce website developed in PHP. It provides an intuitive and user-friendly platform for customers to browse and purchase products online. The website features an extensive product catalog, secure user authentication, advanced product search and filtering, shopping cart functionality, user profile management, credit card payment form, and integrated PayPal payment plus transportation details and process included as part of Paypal payment (**updated version based in our promises given as part of assignment 2 - Diagrams**).
 
 ## Key Features
 - User Authentication: Users can register and log in to the website to have a personalized shopping experience.
