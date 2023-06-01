@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 31, 2023 at 01:23 PM
+-- Generation Time: Jun 01, 2023 at 04:34 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 5.6.38
 
@@ -67,7 +67,12 @@ INSERT INTO `orders` (`id`, `user_id`, `customer_data`, `notes`, `total`) VALUES
 (14, 3, 'Shaban Ejupi<br />+38345601379<br />shabanejupi5@gmail.com<br />128 Zejnel Salihu', 'E pa hapur', 1.25),
 (15, 3, 'Shaban Ejupi<br />+38345601379<br />shabanejupi5@gmail.com<br />128 Zejnel Salihu', '', 5.77),
 (16, 3, 'Shaban Ejupi<br />+38345601379<br />shabanejupi5@gmail.com<br />128 Zejnel Salihu', '', 1.8),
-(17, 4, 'Shaban Ejupi<br />+38345601379<br />shabanejupi5@gmail.com<br />128 Zejnel Salihu', '', 1.25);
+(17, 4, 'Shaban Ejupi<br />+38345601379<br />shabanejupi5@gmail.com<br />128 Zejnel Salihu', '', 1.25),
+(18, 3, 'Shaban Ejupi<br />+38345601379<br />shabanejupi5@gmail.com<br />128 Zejnel Salihu', '', 1.7),
+(19, 3, 'Shaban Ejupi<br />+38345601379<br />shabanejupi5@gmail.com<br />128 Zejnel Salihu', '', 1.7),
+(20, 3, 'Shaban Ejupi<br />+38345601379<br />shabanejupi5@gmail.com<br />128 Zejnel Salihu', '', 1.7),
+(21, 3, 'Shaban<br />+38345594549<br />shaban.ejupi@student.uni-pr.edu<br />m9 Eqrem Ã‡abej', '', 1.25),
+(22, 3, 'Shaban Ejupi<br />+38345601379<br />shabanejupi5@gmail.com<br />128 Zejnel Salihu', '', 0.45);
 
 -- --------------------------------------------------------
 
@@ -101,6 +106,30 @@ INSERT INTO `order_product` (`order_id`, `products_id`) VALUES
 (15, 6),
 (16, 1),
 (17, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `payments`
+--
+
+CREATE TABLE `payments` (
+  `id` int(11) NOT NULL,
+  `payment_id` varchar(255) NOT NULL,
+  `payer_id` varchar(255) NOT NULL,
+  `payer_email` varchar(255) NOT NULL,
+  `amount` float(10,2) NOT NULL,
+  `currency` varchar(255) NOT NULL,
+  `payment_status` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `payments`
+--
+
+INSERT INTO `payments` (`id`, `payment_id`, `payer_id`, `payer_email`, `amount`, `currency`, `payment_status`) VALUES
+(1, 'PAYID-MR4I76Q7MM36954XV517063H', 'TMP6TESKZ9NZ4', 'sb-yysm326134791@personal.example.com', 20.00, 'EUR', 'approved'),
+(2, 'PAYID-MR4KRIY5N008488V8958974G', 'TMP6TESKZ9NZ4', 'sb-yysm326134791@personal.example.com', 1.25, 'EUR', 'approved');
 
 -- --------------------------------------------------------
 
@@ -222,6 +251,12 @@ ALTER TABLE `order_product`
   ADD KEY `fk_op_products_idx` (`products_id`);
 
 --
+-- Indexes for table `payments`
+--
+ALTER TABLE `payments`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `products`
 --
 ALTER TABLE `products`
@@ -255,7 +290,13 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+
+--
+-- AUTO_INCREMENT for table `payments`
+--
+ALTER TABLE `payments`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `products`
