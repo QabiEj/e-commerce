@@ -1,6 +1,17 @@
 <?php 
     session_start();
 
+    function calculateTotalPrice($cart)
+{
+    $totalPrice = 0;
+    foreach ($cart as $item) {
+        $totalPrice += $item['price'] * $item['qty'];
+    }
+    // Set the total price in the session
+    $_SESSION['totalPrice'] = $totalPrice;
+    return $totalPrice;
+}
+
     if(!isset($_SESSION['cart'])) {
         $_SESSION['cart'] = [];
     }

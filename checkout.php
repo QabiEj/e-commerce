@@ -1,12 +1,13 @@
 <?php
 include('includes/header.php');
 
-// check if user is logged in
+
 if (!isset($_SESSION['is_loggedin']) || $_SESSION['is_loggedin'] != 1) {
     die('<div class="container my-4">Please <a href="login.php">login</a> first</div>');
 }
 
 $errors = [];
+$totalPrice = calculateTotalPrice($_SESSION['cart']);
 
 if (isset($_POST['checkout_btn'])) {
     // data
@@ -15,6 +16,9 @@ if (isset($_POST['checkout_btn'])) {
     $phone = $_POST['phone'];
     $address = $_POST['address'];
     $notes = $_POST['notes'];
+    $card_number = $_POST['card_number'];
+    $expiry_date = $_POST['expiry_date'];
+    $cvv = $_POST['cvv'];
 
     if (empty($fullname)) {
         $errors[] = 'Fullname is required!';
@@ -31,7 +35,15 @@ if (isset($_POST['checkout_btn'])) {
     if (empty($address)) {
         $errors[] = 'Address is required!';
     }
-
+    if (empty($card_number)) {
+        $errors[] = 'Card number is required!';
+    }
+    if (empty($expiry_date)) {
+        $errors[] = 'Expiry date is required!';
+    }
+    if (empty($cvv)) {
+        $errors[] = 'CVV is required!';
+    }
     if (count($errors) === 0) {
         $data = [
             'user_id' => $_SESSION['id'],
@@ -45,12 +57,12 @@ if (isset($_POST['checkout_btn'])) {
         // Insert the order data into the 'orders' table
         if ($crud->create('orders', $data)) {
             // pivot table: order_product (for each cart product: order_id, product_id)
-            $order_id = $crud->getLastInsertedId(); // Get the last inserted order ID
+            $order_id = $crud -> $_SESSION['id'];// Get the last inserted order ID
 
             foreach ($_SESSION['cart'] as $item) {
                 $crud->create('order_product', ['order_id' => $order_id, 'products_id' => $item['id']]);
             }
-
+            
             unset($_SESSION['cart']);
 
             header('Location: index.php?action=checkout&status=1');
@@ -137,6 +149,14 @@ if (isset($_POST['checkout_btn'])) {
 
                     <button type="submit" name="checkout_btn" class="btn btn-sm btn-outline-primary">Submit</button>
                 </form>
+                <br>
+                <div>
+                    <form action="charge.php" method="post">
+                        <input type="text" name="amount" value="<?= $totalPrice ?>" readonly />
+                        <input type="submit" name="submit" value="Pay With Paypal">
+                    </form>
+                </div>
+                </br>
             </div>
         </div> <!-- ./div -->
     </div>

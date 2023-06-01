@@ -13,6 +13,7 @@ class CRUD {
     public function create($table, $data) {
         $sql = "INSERT INTO `" . $table . "` SET ";
 
+        
         if(count($data)) {
             $count = 1;
 
