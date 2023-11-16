@@ -1,4 +1,3 @@
-![Shop - 1](https://github.com/ShabanEjupi/e-commerce/assets/101940223/16965552-6488-4b8a-bde5-6986c402ed01)# e-commerce
 # eCommerce Shopping Cart Website
 
 ## Introduction
@@ -12,37 +11,21 @@ This is a fully featured eCommerce website developed in PHP. It provides an intu
 - User Profile Management: Users can manage their profiles, updating personal details as required.
 - Checkout & Payment: The checkout process collects necessary shipping details and uses integrated PayPal for secure payment.
 - Order History & Tracking: Users can view their past orders and track the status of current orders.
-- [WebpageView/AddProducts.png](![AddProducts](https://github.com/ShabanEjupi/e-commerce/assets/101940223/21097793-8739-4dfc-a686-64456c7f1f9e)
-)
-- [WebpageView/Main - 1.png](![Main - 1](https://github.com/ShabanEjupi/e-commerce/assets/101940223/620cc3dc-c7df-4d19-bead-ae80209d1a6a)
-)
-- [WebpageView/Main - 2.png](![Main - 2](https://github.com/ShabanEjupi/e-commerce/assets/101940223/40cdbc4f-744a-4dcd-b823-e67f68d4f999)
-)
-- [WebpageView/Main - 3.png](![Main - 3](https://github.com/ShabanEjupi/e-commerce/assets/101940223/34b70981-fccb-4bec-b0b1-d8d1e0d78da7)
-)
-- [WebpageView/Cart - 1.png](![Cart - 1](https://github.com/ShabanEjupi/e-commerce/assets/101940223/56334625-a110-4cbe-a702-2c12e76ce4fb)
-)
-- [WebpageView/Categories.png](![Categories](https://github.com/ShabanEjupi/e-commerce/assets/101940223/0f76c73e-b09f-45e3-9aa3-468cfff82c97)
-)
-- [WebpageView/Dashboard.png](![Dashboard](https://github.com/ShabanEjupi/e-commerce/assets/101940223/765e1e53-f6fd-402d-bb3a-9e88d96a9e4f)
-)
-- [WebpageView/Login.png](![Login](https://github.com/ShabanEjupi/e-commerce/assets/101940223/6f881bbf-06d1-4430-b743-a0d772ea845a)
-)
-- [WebpageView/Orders.png](![Orders](https://github.com/ShabanEjupi/e-commerce/assets/101940223/c090c691-56ae-4765-8b80-1c283abfc831)
-)
-- [WebpageView/Products - 1.png](![Products - 1](https://github.com/ShabanEjupi/e-commerce/assets/101940223/e71edddb-f628-442b-8320-063ea37b0a4b)
-)
-- [WebpageView/Profile.png](![Profile](https://github.com/ShabanEjupi/e-commerce/assets/101940223/053f810e-5194-4c87-a682-4866ecdfa759)
-)
-- [WebpageView/Promotions.png](![Promotions](https://github.com/ShabanEjupi/e-commerce/assets/101940223/647d805d-cbb4-4193-80e1-5ffdf5241f40)
-)
-- [WebpageView/Register.png](![Register](https://github.com/ShabanEjupi/e-commerce/assets/101940223/96086260-95bb-44da-a565-380012befbf7)
-)
-- [WebpageView/Shop - 1.png](![Shop - 1](https://github.com/ShabanEjupi/e-commerce/assets/101940223/4e46fbc9-131a-4a0c-b7c5-aa4d3ff35bde)
-)
-- [WebpageView/Shop - 2.png](![Shop - 2](https://github.com/ShabanEjupi/e-commerce/assets/101940223/9f8a746d-8ad1-47b3-a448-84da1a8298c8)
-)
-[Qabidev/ghbony](https://huggingface.co/Qabidev/ghbony)
+- ![AddProducts](https://github.com/ShabanEjupi/e-commerce/assets/101940223/21097793-8739-4dfc-a686-64456c7f1f9e)
+- ![Main - 1](https://github.com/ShabanEjupi/e-commerce/assets/101940223/620cc3dc-c7df-4d19-bead-ae80209d1a6a)
+- ![Main - 2](https://github.com/ShabanEjupi/e-commerce/assets/101940223/40cdbc4f-744a-4dcd-b823-e67f68d4f999)
+- ![Main - 3](https://github.com/ShabanEjupi/e-commerce/assets/101940223/34b70981-fccb-4bec-b0b1-d8d1e0d78da7)
+- ![Cart - 1](https://github.com/ShabanEjupi/e-commerce/assets/101940223/56334625-a110-4cbe-a702-2c12e76ce4fb)
+- ![Categories](https://github.com/ShabanEjupi/e-commerce/assets/101940223/0f76c73e-b09f-45e3-9aa3-468cfff82c97)
+- ![Dashboard](https://github.com/ShabanEjupi/e-commerce/assets/101940223/765e1e53-f6fd-402d-bb3a-9e88d96a9e4f)
+- ![Login](https://github.com/ShabanEjupi/e-commerce/assets/101940223/6f881bbf-06d1-4430-b743-a0d772ea845a)
+- ![Orders](https://github.com/ShabanEjupi/e-commerce/assets/101940223/c090c691-56ae-4765-8b80-1c283abfc831)
+- ![Products - 1](https://github.com/ShabanEjupi/e-commerce/assets/101940223/e71edddb-f628-442b-8320-063ea37b0a4b)
+- ![Profile](https://github.com/ShabanEjupi/e-commerce/assets/101940223/053f810e-5194-4c87-a682-4866ecdfa759)
+- ![Promotions](https://github.com/ShabanEjupi/e-commerce/assets/101940223/647d805d-cbb4-4193-80e1-5ffdf5241f40)
+- ![Register](https://github.com/ShabanEjupi/e-commerce/assets/101940223/96086260-95bb-44da-a565-380012befbf7)
+- ![Shop - 1](https://github.com/ShabanEjupi/e-commerce/assets/101940223/4e46fbc9-131a-4a0c-b7c5-aa4d3ff35bde)
+- ![Shop - 2](https://github.com/ShabanEjupi/e-commerce/assets/101940223/9f8a746d-8ad1-47b3-a448-84da1a8298c8)
 
 ## Getting Started
 1. Clone the repository.
