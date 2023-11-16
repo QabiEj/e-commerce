@@ -12,6 +12,21 @@ This is a fully featured eCommerce website developed in PHP. It provides an intu
 - User Profile Management: Users can manage their profiles, updating personal details as required.
 - Checkout & Payment: The checkout process collects necessary shipping details and uses integrated PayPal for secure payment.
 - Order History & Tracking: Users can view their past orders and track the status of current orders.
+- WebpageView/AddProducts.png
+- WebpageView/Main - 1.png 
+- WebpageView/Main - 2.png
+- WebpageView/Main - 3.png
+- WebpageView/Cart - 1.png
+- WebpageView/Categories.png
+- WebpageView/Dashboard.png
+- WebpageView/Login.png
+- WebpageView/Orders.png
+- WebpageView/Products - 1.png
+- WebpageView/Profile.png
+- WebpageView/Promotions.png
+- WebpageView/Register.png
+- WebpageView/Shop - 1.png
+- WebpageView/Shop - 2.png
 
 ## Getting Started
 1. Clone the repository.
