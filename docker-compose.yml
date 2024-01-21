@@ -1,0 +1,16 @@
+version: '3'
+services:
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: estore
+    volumes:
+      - ./estore.sql:/docker-entrypoint-initdb.d/estore.sql
+
+  app:
+    build: .
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
