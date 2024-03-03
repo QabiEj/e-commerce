@@ -8,7 +8,7 @@ class Database {
     private $connection = null;
 
     public function __construct() {
-        $this->connection = new mysqli(getenv('MARIADB_HOST'), getenv('MARIADB_USER'), getenv('MARIADB_PASS'), getenv('MARIADB_DB')); 
+        $this->connection = new mysqli(getenv('MARIADB_HOST'), getenv('MARIADB_USER'), getenv('MARIADB_PASS'), getenv('MARIADB_DB'), getenv('MARIADB_PORT')); 
     }
 
     public static function getInstance() {
