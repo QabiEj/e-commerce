@@ -1,8 +1,4 @@
 <?php
-require_once "vendor/autoload.php";
-
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
 
 use Omnipay\Omnipay;
  
@@ -14,7 +10,7 @@ define('PAYPAL_CANCEL_URL', 'http://localhost/e-commerce/cancel.php');
 define('PAYPAL_CURRENCY', 'EUR'); // set your currency here
 
 // Connect with the database
-$db = new mysqli(getenv('MARIADB_HOST'), getenv('MARIADB_USER'), getenv('MARIADB_PASS'), getenv('MARIADB_DB')); 
+$db = new mysqli('localhost', 'root', '', 'estore', 3306); 
  
 if ($db->connect_errno) {
     die("Connect failed: ". $db->connect_error);
