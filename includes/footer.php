@@ -2,7 +2,7 @@
 
     <footer class="bg-light py-4">
         <div class="container">
-            <p class="text-center m-0 p-0">Copyrights &copy; eStore, 2023.</p>
+            <p class="text-center m-0 p-0">Copyrights &copy; eStore, 2024.</p>
         </div>
     </footer>
 
